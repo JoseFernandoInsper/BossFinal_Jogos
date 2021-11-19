@@ -19,6 +19,7 @@ public class TimerController : MonoBehaviour
 
     void Update()
     {
+        elapsedTime += Time.deltaTime;
         timePlaying = TimeSpan.FromSeconds(elapsedTime);
         string temp = timePlaying.ToString("mm':'ss'.'ff");
         timeCouter.text = $"Tempo: {temp}";
