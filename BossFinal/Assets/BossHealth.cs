@@ -1,11 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
+
 
 public class BossHealth : MonoBehaviour
 {
-	public Slider slider;
 
 	public int health = 500;
 
@@ -20,7 +19,7 @@ public class BossHealth : MonoBehaviour
 			return;
 
 		health -= damage;
-		slider.value = health;
+		
 
 		if (health <= 200)
 		{
@@ -32,8 +31,9 @@ public class BossHealth : MonoBehaviour
 			Die();
 		}
 	}
+   
 
-	void Die()
+    void Die()
 	{
 		Instantiate(deathEffect, transform.position, Quaternion.identity);
 		Destroy(gameObject);

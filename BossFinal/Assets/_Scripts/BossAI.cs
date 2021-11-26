@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class BossAI : StateMachineBehaviour
 {
-
     Transform player;
     Rigidbody2D rb;
     public float speed = 3f;

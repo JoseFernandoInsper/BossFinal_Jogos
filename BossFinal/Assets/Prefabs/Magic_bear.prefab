@@ -15,6 +15,9 @@ GameObject:
   - component: {fileID: 4677979245186442538}
   - component: {fileID: 4677979245186442536}
   - component: {fileID: 4677979245186442537}
+  - component: {fileID: 5929328561391080358}
+  - component: {fileID: 5867500892517711217}
+  - component: {fileID: 7038322444967720911}
   m_Layer: 0
   m_Name: Magic_bear
   m_TagString: Untagged
@@ -140,7 +143,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.069380045, y: 0}
+  m_Offset: {x: 0.02974099, y: -0.027340896}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -151,7 +154,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.75, y: 0.578125}
+  m_Size: {x: 0.6707219, y: 0.49914014}
   m_EdgeRadius: 0
 --- !u!114 &4677979245186442536
 MonoBehaviour:
@@ -186,3 +189,47 @@ MonoBehaviour:
   attackMask:
     serializedVersion: 2
     m_Bits: 8
+--- !u!58 &5929328561391080358
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4677979245186442542}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.29163623}
+  serializedVersion: 2
+  m_Radius: 0.16568947
+--- !u!114 &5867500892517711217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4677979245186442542}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bff3091746f150e4d96ee3e4c3a92c4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &7038322444967720911
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4677979245186442542}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d14ab29b1318dd6479d4ebe813db65fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slider: {fileID: 0}
+  health: 500
+  deathEffect: {fileID: 234409129751425836, guid: 070f4c888b3ec2e41a49f2a1154c5629, type: 3}
+  isInvulnerable: 0
