@@ -5,7 +5,7 @@ using System;
 
 public class PlayerMovement : MonoBehaviour
 {
-    //public Animator animator;
+    public Animator animator;
     public CharacterController2D controller;
     float horizontalMove = 0f;
     public float Speed = 35f;
@@ -14,9 +14,9 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        //animator.SetBool("isGrounded", controller.m_Grounded);
+        animator.SetBool("isGrounded", controller.m_Grounded);
 
-        if(Math.Abs(Input.GetAxisRaw("Horizontal"))>= 0.5f)
+        if (Math.Abs(Input.GetAxisRaw("Horizontal"))>= 0.5f)
         {
             isFacing = Input.GetAxisRaw("Horizontal");
         }
@@ -34,6 +34,7 @@ public class PlayerMovement : MonoBehaviour
             
             jump = true;
         }
+        
     }
 
     private void FixedUpdate()
