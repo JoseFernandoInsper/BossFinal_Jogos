@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameManager : MonoBehaviour
+public class GameManager
 {
     private static GameManager _instance;
     public enum GameState { MENU, GAME, PAUSE, ENDGAME };
@@ -19,6 +19,11 @@ public class GameManager : MonoBehaviour
 
         return _instance;
     }
+
+    // public void Update() {
+    //     print(power);
+    // }
+
     private GameManager()
     {
         power = 0;
