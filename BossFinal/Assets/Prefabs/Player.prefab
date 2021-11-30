@@ -77,6 +77,9 @@ GameObject:
   - component: {fileID: 3793703513696590337}
   - component: {fileID: 1007520349510326010}
   - component: {fileID: 7973507691766333554}
+  - component: {fileID: 5579204147310511773}
+  - component: {fileID: 7177012846493597673}
+  - component: {fileID: 6005286446310122647}
   m_Layer: 3
   m_Name: Player
   m_TagString: Player
@@ -284,3 +287,54 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bff3091746f150e4d96ee3e4c3a92c4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &5579204147310511773
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3793703513696590362}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53ab50608ef0cf140a6fc2589e0a02ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
+  deathEffect: {fileID: 234409129751425836, guid: 070f4c888b3ec2e41a49f2a1154c5629, type: 3}
+--- !u!114 &7177012846493597673
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3793703513696590362}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc97de3443cc91f479bd8dc39ac857cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackDamage: 20
+  attackOffset: {x: 0.95, y: -0.89, z: 0}
+  attackRange: 1
+  attackMask:
+    serializedVersion: 2
+    m_Bits: 64
+--- !u!95 &6005286446310122647
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3793703513696590362}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: fa87c9c6c15071142a729eb40da91731, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 2
+  m_ApplyRootMotion: 1
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
