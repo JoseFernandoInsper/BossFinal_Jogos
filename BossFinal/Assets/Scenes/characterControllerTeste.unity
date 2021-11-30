@@ -123,6 +123,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!95 &472654260 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 6005286446310122647, guid: cabcd296373f69e4fbb6a8c5fe2fa953, type: 3}
+  m_PrefabInstance: {fileID: 7723474633380590043}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &623866106
 GameObject:
   m_ObjectHideFlags: 0
@@ -899,9 +904,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3793703513455532861, guid: cabcd296373f69e4fbb6a8c5fe2fa953, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.69
+      objectReference: {fileID: 0}
+    - target: {fileID: 3793703513696590337, guid: cabcd296373f69e4fbb6a8c5fe2fa953, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 472654260}
     - target: {fileID: 3793703513696590362, guid: cabcd296373f69e4fbb6a8c5fe2fa953, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 3793703513696590363, guid: cabcd296373f69e4fbb6a8c5fe2fa953, type: 3}
+      propertyPath: m_WhatIsGround.m_Bits
+      value: 119
       objectReference: {fileID: 0}
     - target: {fileID: 3793703513696590365, guid: cabcd296373f69e4fbb6a8c5fe2fa953, type: 3}
       propertyPath: m_RootOrder
@@ -909,11 +926,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3793703513696590365, guid: cabcd296373f69e4fbb6a8c5fe2fa953, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.59
+      value: -10.79
       objectReference: {fileID: 0}
     - target: {fileID: 3793703513696590365, guid: cabcd296373f69e4fbb6a8c5fe2fa953, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.22
+      value: 9.86
       objectReference: {fileID: 0}
     - target: {fileID: 3793703513696590365, guid: cabcd296373f69e4fbb6a8c5fe2fa953, type: 3}
       propertyPath: m_LocalPosition.z

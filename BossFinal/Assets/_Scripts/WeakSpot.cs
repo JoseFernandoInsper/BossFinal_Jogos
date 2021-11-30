@@ -8,4 +8,8 @@ public class WeakSpot : MonoBehaviour
     {
         GetComponent<Animator>().SetBool("isOnTop", true);
     }
+    public void OnTriggerExit2D(Collider2D other)
+    {
+        GetComponent<Animator>().SetBool("isOnTop", false);
+    }
 }
