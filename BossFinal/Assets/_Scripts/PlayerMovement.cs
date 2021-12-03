@@ -14,7 +14,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        animator.SetBool("isGrounded", controller.m_Grounded);
+        // animator.SetBool("isGrounded", controller.m_Grounded);
 
         if (Math.Abs(Input.GetAxisRaw("Horizontal"))>= 0.5f)
         {
