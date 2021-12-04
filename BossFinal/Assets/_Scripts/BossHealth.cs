@@ -23,7 +23,7 @@ public class BossHealth : MonoBehaviour
 
 		if (health <= 200)
 		{
-			GetComponent<Animator>().SetBool("IsEnraged", true);
+			GetComponent<Animator>().SetBool("isEnraged", true);
 		}
 
 		if (health <= 0)

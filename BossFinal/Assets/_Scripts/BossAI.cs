@@ -32,6 +32,7 @@ public class BossAI : StateMachineBehaviour
 
         Ratkk = Random.Range(min, max);
         if(Ratkk< 0.1f){
+            
             animator.SetTrigger("RandomAttack");
         }
 
