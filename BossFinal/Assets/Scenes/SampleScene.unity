@@ -642,6 +642,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6005286446310122647, guid: cabcd296373f69e4fbb6a8c5fe2fa953, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7177012846493597673, guid: cabcd296373f69e4fbb6a8c5fe2fa953, type: 3}
       propertyPath: attackDamage
       value: 60
@@ -2571,7 +2575,7 @@ PrefabInstance:
     - target: {fileID: 7038322444967720911, guid: e62aa17de0137764b8f0a822a274b1eb, type: 3}
       propertyPath: deathEffect
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 439917952}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e62aa17de0137764b8f0a822a274b1eb, type: 3}
 --- !u!1001 &6677509364851517184
