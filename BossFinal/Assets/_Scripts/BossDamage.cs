@@ -8,7 +8,7 @@ public class BossDamage : MonoBehaviour
 	public int enragedAttackDamage = 40;
 
 	public Vector3 attackOffset;
-	public float attackRange = 1f;
+	public float attackRange = 3f;
 	public LayerMask attackMask;
 
 	public void Attack()
@@ -33,8 +33,23 @@ public class BossDamage : MonoBehaviour
 		Collider2D colInfo = Physics2D.OverlapCircle(pos, attackRange, attackMask);
 		if (colInfo != null)
 		{
-			//colInfo.GetComponent<PlayerHealth>().TakeDamage(enragedAttackDamage);
+			colInfo.GetComponent<PlayerHealth>().TakeDamage(enragedAttackDamage);
 		}
+	}
+
+	public void RamdomAttack()
+	{
+		attackRange = 8;
+		Vector3 pos = transform.position;
+		pos += transform.right * attackOffset.x;
+		pos += transform.up * attackOffset.y;
+
+		Collider2D colInfo = Physics2D.OverlapCircle(pos, attackRange, attackMask);
+		if (colInfo != null)
+		{
+			colInfo.GetComponent<PlayerHealth>().TakeDamage(enragedAttackDamage);
+		}
+		attackRange = 3;
 	}
 
 	void OnDrawGizmosSelected()
