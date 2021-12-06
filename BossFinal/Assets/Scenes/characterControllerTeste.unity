@@ -128,25 +128,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5877477232878405183, guid: 2028f7e341516450e9d7b0313160c4b5, type: 3}
   m_PrefabInstance: {fileID: 5877477232644693080}
   m_PrefabAsset: {fileID: 0}
---- !u!251 &303192683
-PlatformEffector2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 303192679}
-  m_Enabled: 1
-  m_UseColliderMask: 1
-  m_ColliderMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_RotationalOffset: 0
-  m_UseOneWay: 1
-  m_UseOneWayGrouping: 0
-  m_SurfaceArc: 180
-  m_UseSideFriction: 0
-  m_UseSideBounce: 0
-  m_SideArc: 1
 --- !u!95 &472654260 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 6005286446310122647, guid: cabcd296373f69e4fbb6a8c5fe2fa953, type: 3}
