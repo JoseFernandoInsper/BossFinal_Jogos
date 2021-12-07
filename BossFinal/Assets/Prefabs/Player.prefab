@@ -287,6 +287,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bff3091746f150e4d96ee3e4c3a92c4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  boss: 0
 --- !u!114 &5579204147310511773
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -314,6 +315,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attackDamage: 20
+  dano: {fileID: 8300000, guid: 59978abd97aed9b4eb35eaa21cf588c1, type: 3}
   attackOffset: {x: 0.95, y: -0.89, z: 0}
   attackRange: 1
   attackMask:

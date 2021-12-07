@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerSword : MonoBehaviour
 {
     public int attackDamage = 40;
+		public AudioClip dano;
 
     public Vector3 attackOffset;
     public float attackRange = 1f;
@@ -19,6 +20,7 @@ public class PlayerSword : MonoBehaviour
 		if (colInfo != null)
 		{
 			colInfo.GetComponent<BossHealth>().TakeDamage(attackDamage);
+			AudioSource.PlayClipAtPoint(dano, this.gameObject.transform.position, 1f);
 			GetComponent<Animator>().SetBool("isOnTop", false);
 		}
 	}
