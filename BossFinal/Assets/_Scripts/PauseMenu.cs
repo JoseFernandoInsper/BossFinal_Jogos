@@ -35,14 +35,14 @@ public class PauseMenu : MonoBehaviour
     public void Replay()
     {
         Time.timeScale = 1f;
-        //SceneManager.LoadScene("Menu");
+        PlayerPrefs.SetFloat("score", 0f);
         SceneManager.LoadScene(1);
     }
 
     public void GoToMenu()
     {
         Time.timeScale = 1f;
-        //SceneManager.LoadScene("Menu");
+        PlayerPrefs.SetFloat("score", 0f);
         SceneManager.LoadScene(0);
     }
 }

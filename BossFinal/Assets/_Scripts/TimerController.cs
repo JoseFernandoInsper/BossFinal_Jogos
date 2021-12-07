@@ -8,20 +8,24 @@ using TMPro;
 public class TimerController : MonoBehaviour
 {
     TextMeshProUGUI timeCouter;
-    private float elapsedTime;
-    private TimeSpan timePlaying;
+    private float elapsedTime = 0;
+    public TimeSpan timePlaying;
 
     void Start()
     {
         timeCouter = GetComponent<TextMeshProUGUI>();
-        elapsedTime = 0f;
+        elapsedTime = PlayerPrefs.GetFloat("score", 0);
     }
 
     void Update()
-    {
+    { 
         elapsedTime += Time.deltaTime;
         timePlaying = TimeSpan.FromSeconds(elapsedTime);
         string temp = timePlaying.ToString("mm':'ss'.'ff");
         timeCouter.text = $"Tempo: {temp}";
+        if(elapsedTime > PlayerPrefs.GetFloat("score", 0f)){
+            PlayerPrefs.SetFloat("score", elapsedTime);
+        }
+        
     }
 }

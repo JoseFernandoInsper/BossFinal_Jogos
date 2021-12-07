@@ -38,6 +38,10 @@ public class BossHealth : MonoBehaviour
 	{
 		Instantiate(deathEffect, transform.position, Quaternion.identity);
 		Destroy(gameObject);
+		if(PlayerPrefs.GetFloat("Highscore")> PlayerPrefs.GetFloat("score")){
+			PlayerPrefs.SetFloat("Highscore", PlayerPrefs.GetFloat("score"));
+		}
+		PlayerPrefs.SetFloat("score", 0f);
 		SceneManager.LoadScene(4);
 	}
 }
