@@ -24,8 +24,8 @@ public class PlayerHealth : MonoBehaviour
 	void Die()
 	{
 		GetComponent<Animator>().SetBool("isDead", true);
-		//SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-	}
+		SceneManager.LoadScene(4);
+	}	
 	IEnumerator DamageAnimation()
 	{
 		SpriteRenderer[] srs = GetComponentsInChildren<SpriteRenderer>();

@@ -1556,6 +1556,11 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 291959431387716862, guid: 0db94839cdd189f4b82091d38d10a44f, type: 3}
   m_PrefabInstance: {fileID: 1592300823}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &1592300825 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 291959431387716860, guid: 0db94839cdd189f4b82091d38d10a44f, type: 3}
+  m_PrefabInstance: {fileID: 1592300823}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1659813094
 GameObject:
   m_ObjectHideFlags: 0
@@ -2085,18 +2090,18 @@ PrefabInstance:
     - target: {fileID: 7974499030073981075, guid: 172db8fcbd6254c438a3b11944c61ad9, type: 3}
       propertyPath: transition
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1592300825}
     - target: {fileID: 7974499030073981076, guid: 172db8fcbd6254c438a3b11944c61ad9, type: 3}
       propertyPath: m_RootOrder
       value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7974499030073981076, guid: 172db8fcbd6254c438a3b11944c61ad9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.0958941
+      value: -0.45
       objectReference: {fileID: 0}
     - target: {fileID: 7974499030073981076, guid: 172db8fcbd6254c438a3b11944c61ad9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 420
+      value: 424.56
       objectReference: {fileID: 0}
     - target: {fileID: 7974499030073981076, guid: 172db8fcbd6254c438a3b11944c61ad9, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2130,6 +2135,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7974499030073981077, guid: 172db8fcbd6254c438a3b11944c61ad9, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 1d31574c911033749a63e16c61fdd07c, type: 3}
     - target: {fileID: 7974499030073981079, guid: 172db8fcbd6254c438a3b11944c61ad9, type: 3}
       propertyPath: m_Name
       value: transicaoNivel

@@ -582,6 +582,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1019660420}
     m_Modifications:
+    - target: {fileID: 2338113842349879506, guid: b638fc5a2d2e40749b7f1f8bff164f0e, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: bc8ab6bf0ca0248f8982f6afe8586373, type: 2}
     - target: {fileID: 5586736324602521005, guid: b638fc5a2d2e40749b7f1f8bff164f0e, type: 3}
       propertyPath: m_Name
       value: fullStorm
@@ -656,17 +660,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7974499030073981075, guid: 172db8fcbd6254c438a3b11944c61ad9, type: 3}
+      propertyPath: transition
+      value: 
+      objectReference: {fileID: 1456437929}
     - target: {fileID: 7974499030073981076, guid: 172db8fcbd6254c438a3b11944c61ad9, type: 3}
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7974499030073981076, guid: 172db8fcbd6254c438a3b11944c61ad9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.29
+      value: -0.13
       objectReference: {fileID: 0}
     - target: {fileID: 7974499030073981076, guid: 172db8fcbd6254c438a3b11944c61ad9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 422.39
+      value: 420
       objectReference: {fileID: 0}
     - target: {fileID: 7974499030073981076, guid: 172db8fcbd6254c438a3b11944c61ad9, type: 3}
       propertyPath: m_LocalPosition.z
@@ -700,6 +708,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7974499030073981077, guid: 172db8fcbd6254c438a3b11944c61ad9, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 1d31574c911033749a63e16c61fdd07c, type: 3}
     - target: {fileID: 7974499030073981079, guid: 172db8fcbd6254c438a3b11944c61ad9, type: 3}
       propertyPath: m_Name
       value: transicaoNivel
@@ -1339,6 +1351,11 @@ PrefabInstance:
 --- !u!224 &1456437928 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 291959431387716862, guid: 0db94839cdd189f4b82091d38d10a44f, type: 3}
+  m_PrefabInstance: {fileID: 1456437927}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1456437929 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 291959431387716860, guid: 0db94839cdd189f4b82091d38d10a44f, type: 3}
   m_PrefabInstance: {fileID: 1456437927}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1545829878
