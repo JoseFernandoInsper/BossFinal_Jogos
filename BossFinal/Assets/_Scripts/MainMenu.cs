@@ -8,11 +8,18 @@ using TMPro;
 public class MainMenu : MonoBehaviour
 {
 
-    TextMeshProUGUI timeCouterHS;
+    
+    public TextMeshProUGUI timeCouterHS;
     public TimeSpan timePlaying;
+    
 
-    public void Start(){
+    void Start(){
 
+        //timeCouterHS.GetComponent<TextMeshProUGUI>();
+        
+    }
+
+    void Update(){
         timePlaying = TimeSpan.FromSeconds(PlayerPrefs.GetFloat("Highscore", 0f));
         string temp = timePlaying.ToString("mm':'ss'.'ff");
         timeCouterHS.text = $"HighScore: {temp}";
