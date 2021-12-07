@@ -32,6 +32,12 @@ public class PauseMenu : MonoBehaviour
         Time.timeScale = 0f;
         isPaused = true;
     }
+    public void Replay()
+    {
+        Time.timeScale = 1f;
+        //SceneManager.LoadScene("Menu");
+        SceneManager.LoadScene(1);
+    }
 
     public void GoToMenu()
     {
