@@ -9,9 +9,9 @@ public class levelLoader : MonoBehaviour
     public Animator transition;
     public float waitTime = 1;
     
-    void Update()
+    public void OnTriggerEnter2D(Collider2D other)
     {
-        //loadNextLevel();
+        loadNextLevel();
     }
 
     public void loadNextLevel(){
